@@ -6,14 +6,27 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 
 == Introduction and Goals
+build the world's largest genealogical graph in history
+Organization wants to build the world's largest genealogical graph in history
+Requirements: data is graph-like, open-ended, and must be viewable and searchable over a 
+Users: millions of users, hundreds/thousands of third-party applications
 
+variety of technology platforms (web, mobile, etc);
+API allowing third-party access to all of the data;
+historical records (census, marriage, death, parish records, etc) are being added
+by teams of people in the field--each record must be viewed/transcribed and scanned twice and verified
 
 
 === Requirements Overview
+User wants to upload his genealogical story.
+User wants to view his genealogical story.
+User wants to search his genealogical story.
+User wants to grant acces to genealogical data.
 
 
 
 === Quality Goals
+Scalability, security, 
 
 
 
@@ -24,6 +37,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+|regular users||Know who their ancestors are
+|CEO||
+|Goverment authorities||
+|CTO||
+|Support/dev team||
+|Teams to upload marriage certificates etc||
+
 |===
