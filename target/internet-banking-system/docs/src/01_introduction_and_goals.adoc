@@ -26,8 +26,9 @@ User wants to grant acces to genealogical data.
 
 
 === Quality Goals
-Scalability, security, 
-
+- Scalability
+- Security
+- Interoperability
 
 === Quality Scenarios
 
@@ -53,6 +54,13 @@ Scalability, security,
 - **Response**: The system verifies the user's permissions before granting access
 - **Response Measure**: Access is only granted to users with the correct permissions
 
+==== Interoperability
+
+- **Source**: Third-party application
+- **Stimulus**: Attempts to access the API
+- **Environment**: Under normal conditions
+- **Response**: The application is able to access the API
+- **Response Measure**: The system is able to handle requests from hundreds/thousands of third-party applications without hurting performance
 
 === Stakeholders
 
