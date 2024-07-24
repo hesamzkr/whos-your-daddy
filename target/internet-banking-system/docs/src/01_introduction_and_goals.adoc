@@ -57,10 +57,10 @@ User wants to grant acces to genealogical data.
 ==== Interoperability
 
 - **Source**: Third-party application
-- **Stimulus**: Attempts to access the API
+- **Stimulus**: Attempts to access the API documentation
 - **Environment**: Under normal conditions
-- **Response**: The application is able to access the API
-- **Response Measure**: The system is able to handle requests from hundreds/thousands of third-party applications without hurting performance
+- **Response**: The application is able to access the API documentation and understand how to use the API
+- **Response Measure**: The API documentation works and is easy to understand
 
 === Stakeholders
 
