@@ -38,7 +38,7 @@ User wants to grant acces to genealogical data.
 - **Stimulus**: Attempts to find for ancestors
 - **Environment**: Under peak load conditions
 - **Response**: The user is able to find the data
-- **Response Measure**: The system is able to handle requests from millions of users without hurting performance
+- **Response Measure**: The system is able to handle requests from hundreds of active users without hurting performance
 
 - **Source**: Third-party application
 - **Stimulus**: Attempts to access the API
