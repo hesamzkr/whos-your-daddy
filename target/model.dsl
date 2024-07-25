@@ -1,4 +1,4 @@
-whosYourDaddy = softwareSystem "Whos your daddy?" {
+whosYourDaddy = softwaresystem "Whos your daddy" {
     !docs internet-banking-system/docs/src
 
     webApp = container "Web Application" {
@@ -33,13 +33,13 @@ whosYourDaddy = softwareSystem "Whos your daddy?" {
     dashboard -> api "Sends requests to"
 }
 
-facebook = softwareSystem "Facebook" {
+facebook = softwaresystem "Facebook" {
     
 }
 
 facebook -> whosYourDaddy "integration"
 
-thirdPartyApplications = softwareSystem "Third Party Applications" {
+thirdPartyApplications = softwaresystem "Third Party Applications" {
 
 }
 
