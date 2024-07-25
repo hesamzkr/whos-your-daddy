@@ -37,6 +37,7 @@ whosYourDaddy = softwaresystem "Whos your daddy" {
 
     // Relationships between containers
     webApp -> api "Sends requests to"
+    api -> webApp "Sends responses to"
     api -> graphDB "Reads from and writes to"
     api -> db "Reads from and writes to"
     dashboard -> api "Sends requests to"

@@ -26,3 +26,26 @@ container whosYourDaddy "Containers" {
     autoLayout
     description "The container diagram for the Internet Banking System."
 }
+
+
+dynamic whosYourDaddy "Authenticate" {
+    user -> whosYourDaddy.webApp "Authenticate using a web browser"
+    whosYourDaddy.webApp -> whosYourDaddy.api "Authenticate"
+    whosYourDaddy.api -> facebook "OAuth"
+    whosYourDaddy.api -> whosYourDaddy.webApp "Authenticated"
+}
+
+dynamic whosYourDaddy "UserWebAppData" {
+    user -> whosYourDaddy.webApp "Look for genealogical data using a web browser"
+    whosYourDaddy.webApp -> whosYourDaddy.api "Request data"
+    whosYourDaddy.api -> whosYourDaddy.graphDB "Look for data"
+    whosYourDaddy.graphDB -> whosYourDaddy.api "Data"
+    whosYourDaddy.api -> whosYourDaddy.webApp "Responds with Data"
+}
+
+dynamic whosYourDaddy "ThirdPartyAppData" {
+    thirdPartyApplications -> whosYourDaddy.api "Request data"
+    whosYourDaddy.api -> whosYourDaddy.graphDB "Look for data"
+    whosYourDaddy.graphDB -> whosYourDaddy.api "Data"
+    whosYourDaddy.api -> thirdPartyApplications "Responds with Data"
+}

@@ -3,18 +3,15 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-runtime-view]]
 == Runtime View
 
-image::embed:SignIn[]
+=== Authentication
+
+image::embed:Authenticate[]
 
 
-=== <Runtime Scenario 1>
+=== User looks for data
 
+image::embed:UserWebAppData[]
 
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
+=== Third party application looks for data
 
-=== <Runtime Scenario 2>
-
-=== ...
-
-=== <Runtime Scenario n>
+image::embed:ThirdPartyAppData[]
