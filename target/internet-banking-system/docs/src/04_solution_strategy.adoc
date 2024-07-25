@@ -3,5 +3,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Solution Strategy
 
-
-
+- Implement backend services in Java/Spring Boot.
+- Make use of Neptune as a graph database for genealogical data, and PostgreSQL for user related data.
+- Implement a GraphQL API to serve our and third party applications.
