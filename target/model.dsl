@@ -1,5 +1,14 @@
+user = person "User" {
+    description "A user of the system."
+}
+
+company = person "Company" {
+    description "A company using the external API."
+}
+
 whosYourDaddy = softwaresystem "Whos your daddy" {
     !docs internet-banking-system/docs/src
+    !adrs internet-banking-system/adrs
 
     webApp = container "Web Application" {
         description "The front-end application that users interact with."
@@ -34,25 +43,17 @@ whosYourDaddy = softwaresystem "Whos your daddy" {
 }
 
 facebook = softwaresystem "Facebook" {
-    
 }
-
-facebook -> whosYourDaddy "integration"
 
 thirdPartyApplications = softwaresystem "Third Party Applications" {
-
 }
 
-thirdPartyApplications -> whosYourDaddy "integration"
 
-user = person "User" {
-    description "A user of the Whos your daddy? system."
-}
+whosYourDaddy.api -> facebook "Authentication"
 
-company = person "Company" {
-    description "A company using the external API."
-}
+thirdPartyApplications -> whosYourDaddy.api "Integrates with"
 
-user -> facebook "Uses to authenticate"
-company -> thirdPartyApplications "Uses the dashboard"
+user -> whosYourDaddy.webApp "Users"
 
+company -> thirdPartyApplications
+company -> whosYourDaddy.dashboard "Uses the dashboard"
