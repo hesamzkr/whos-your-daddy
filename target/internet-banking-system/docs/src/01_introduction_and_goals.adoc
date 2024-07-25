@@ -6,29 +6,29 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 
 == Introduction and Goals
-build the world's largest genealogical graph in history
-Organization wants to build the world's largest genealogical graph in history
-Requirements: data is graph-like, open-ended, and must be viewable and searchable over a 
-Users: millions of users, hundreds/thousands of third-party applications
 
-variety of technology platforms (web, mobile, etc);
-API allowing third-party access to all of the data;
-historical records (census, marriage, death, parish records, etc) are being added
-by teams of people in the field--each record must be viewed/transcribed and scanned twice and verified
+Goals
 
+- Build the world's largest genealogical graph in history
+- Provide an API for third-party applications to access the data
+- Provide a platform for users to see & upload their genealogical stories
+- Provide a dashboard platform for external API users to communicate with the platform
 
 === Requirements Overview
-User wants to upload his genealogical story.
-User wants to view his genealogical story.
-User wants to search his genealogical story.
-User wants to grant acces to genealogical data.
 
+- User wants to upload his genealogical story.
+- User wants to view his genealogical story.
+- User wants to search his genealogical story.
+- User wants to grant acces to genealogical data.
 
 
 === Quality Goals
-- Scalability
-- Security
-- Interoperability
+
+- **Scalability**: The system must be able to handle requests from hundreds of active users without hurting performance
+
+- **Security**: The system must verify the user's permissions before granting access
+
+- **Interoperability**: The system must be able to serve third-party applications and provide them with the necessary documentation to access the API
 
 === Quality Scenarios
 
@@ -39,6 +39,8 @@ User wants to grant acces to genealogical data.
 - **Environment**: Under peak load conditions
 - **Response**: The user is able to find the data
 - **Response Measure**: The system is able to handle requests from hundreds of active users without hurting performance
+
+---
 
 - **Source**: Third-party application
 - **Stimulus**: Attempts to access the API
@@ -64,16 +66,13 @@ User wants to grant acces to genealogical data.
 
 === Stakeholders
 
-
-
-[options="header",cols="1,2,2"]
+[options="header",cols="1,2,3"]
 |===
 |Role/Name|Contact|Expectations
-|regular users||Know who their ancestors are
-|CEO||
-|Goverment authorities||
-|CTO||
-|Support/dev team||
-|Teams to upload marriage certificates etc||
+|**Regular Users**||Know who their ancestors are
+|**Owners**||Make money
+|**Goverment authorities**||Ensure the data is secure
+|**Support/Dev Team**||Build and maintain the system
+|**Reviewer teams**||Upload & review genealogical data
 
 |===
