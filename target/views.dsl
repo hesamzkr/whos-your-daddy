@@ -6,7 +6,7 @@ systemlandscape "SystemLandscape" {
 systemcontext whosYourDaddy "SystemContext" {
     include *
     autoLayout
-    description "The system context diagram for the Internet Banking System."
+    description "The system context diagram for Who's your daddy?."
 }
 
 systemcontext facebook "SystemContextFacebook" {
@@ -24,7 +24,7 @@ systemcontext thirdPartyApplications "SystemContextThirdPartyApplications" {
 container whosYourDaddy "Containers" {
     include *
     autoLayout
-    description "The container diagram for the Internet Banking System."
+    description "The container diagram for the Who's your daddy?."
 }
 
 
