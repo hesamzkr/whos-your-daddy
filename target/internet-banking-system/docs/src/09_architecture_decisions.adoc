@@ -5,3 +5,107 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 See link:../decisions/Internet%20Banking%20System[Architecture Decision Records].
 
+[cols="1,2"]
+|===
+|Section|Description
+
+|Title
+|ADR0002: Use separate interface for users and apis
+
+|Context
+|We need to distinguish between user interfaces and APIs due to their different functionalities. Users require intuitive, responsive UIs, while APIs need robust, secure endpoints for programmatic access. Additionally, companies using our APIs need tools to manage permissions, usage, and costs
+
+|Decision
+|User Interfaces (UIs): Designed for end-users with a focus on usability and accessibility, communicating with backends through secure API calls. API partners Dashboard: Provides companies with tools for permission management, usage monitoring, and cost control.
+
+|Status
+|Accepted
+
+|Consequences
+|
+Benefits: Enhanced security and performance. Improved API management for companies.
+
+Risks: Increased complexity and coordination overhead.
+
+|===
+
+---
+
+[cols="1,2"]
+|===
+|Section|Description
+
+|Title
+|ADR0003: Use Graph database for genealogical data
+
+|Context
+|We are developing "Who's Your Daddy?", an application aimed at building the world's largest genealogical graph. This requires efficient management and querying of graph-like, open-ended data to support millions of users and numerous third-party applications.
+
+|Decision
+|We will use Amazon Neptune for the main data part because it handles complex graph relationships which is ideal for genealogical data. Supports up to 100,000 RPS. Easily scales to meet demand. Simplifies deployment and maintenance.
+
+|Status
+|Accepted
+
+|Consequences
+|
+Benefits: Efficient querying of family relationships. High throughput and low latency. Scalable to handle growth. Reduced management overhead.
+
+Risks: Learning curve for graph database features. Potential vendor lock-in.
+
+|===
+
+---
+
+[cols="1,2"]
+|===
+|Section|Description
+
+|Title
+|ADR0004: Use PostgreSQL for user information
+
+|Context
+|We need a reliable database for user authentication and storing user-related data. This data must be consistent and transactional, but it does not require extremely high performance
+
+|Decision
+|We will use PostgreSQL (PG) for managing user information due to its strong ACID compliance, reliability, and consistency features.
+
+|Status
+|Accepted
+
+|Consequences
+|
+Benefits:Strong data consistency. Supports transactions for secure and reliable user authentication. Has a strong community support.
+
+Risks: May not scale as well as other databases for high-volume transactions.
+
+|===
+
+---
+
+[cols="1,2"]
+|===
+|Section|Description
+
+|Title
+|ADR0005: Add caching on web level to optimize performance
+
+|Context
+|To improve the performance of our web application, we need to implement caching. Our goal is to reduce load times and server requests without incurring additional costs for backend caching solutions like Redis.
+
+|Decision
+|We will implement caching at the web application level. This approach will optimize performance by storing frequently accessed data closer to the user, reducing the need for repeated backend requests.
+We decided to implement web-level caching to optimize performance and manage costs effectively.
+
+|Status
+|Accepted
+
+|Consequences
+|
+Benefits:Reduced load times and quicker data retrieval for users. Avoids additional expenses associated with backend caching solutions like Redis. Reduce server loads and improve scalability.
+
+Risks: Cache invalidation can be complex and may lead to stale data.
+
+Mitigation: Implement cache invalidation strategies to ensure data consistency.
+
+|===
