@@ -9,9 +9,24 @@ ifndef::imagesdir[:imagesdir: ../images]
 |===
 |Term |Definition
 
-|<Term-1>
-|<definition-1>
+|GDPR
+|General Data Protection Regulation. A regulation in EU law on data protection and privacy in the European Union and the European Economic Area.
 
-|<Term-2>
-|<definition-2>
+|Graph
+|A data structure that consists of nodes and edges. Nodes represent entities and edges represent relationships between entities.
+
+|Graph database
+|A database that uses graph structures for semantic queries with nodes, edges, and properties to represent and store data.
+
+|Interoperability
+|The ability of different systems, devices, or applications to connect and communicate in a coordinated way.
+
+|Service
+|A software component that provides a specific functionality.
+
+|Scalability
+|The ability of a system to handle a growing amount of work or its potential to be enlarged to accommodate that growth.
+
+|Security
+|The state of being free from danger or threat.
 |===
