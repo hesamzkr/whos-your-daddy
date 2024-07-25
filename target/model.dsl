@@ -50,11 +50,11 @@ thirdPartyApplications = softwaresystem "Third Party Applications" {
 }
 
 
-whosYourDaddy.api -> facebook "Authentication"
+whosYourDaddy.api -> facebook "Authenticates with"
 
 thirdPartyApplications -> whosYourDaddy.api "Integrates with"
 
-user -> whosYourDaddy.webApp "Users"
+user -> whosYourDaddy.webApp "Uses"
 
 company -> thirdPartyApplications
 company -> whosYourDaddy.dashboard "Uses the dashboard"
