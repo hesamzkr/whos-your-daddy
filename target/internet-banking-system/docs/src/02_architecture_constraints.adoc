@@ -3,6 +3,9 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-architecture-constraints]]
 == Architecture Constraints
 
-Data is graph like
-Facebook integration
-GDPR
+- Data is graph like
+- Cross platform
+- Must support millions of users -> hundreds of active users in average
+- Allow Facebook login
+- Allow third party applications to access the data
+- Respect GDPR
