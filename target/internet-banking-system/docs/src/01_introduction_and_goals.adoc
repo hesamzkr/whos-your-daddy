@@ -71,8 +71,7 @@ Goals
 |Role/Name|Contact|Expectations
 |**Regular Users**||Know who their ancestors are
 |**Owners**||Make money
-|**Goverment authorities**||Ensure the data is secure
 |**Support/Dev Team**||Build and maintain the system
-|**Reviewer teams**||Upload & review genealogical data
+|**Companies**||Use the API, Upload & review genealogical data
 
 |===
