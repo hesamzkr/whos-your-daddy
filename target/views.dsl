@@ -33,6 +33,7 @@ dynamic whosYourDaddy "Authenticate" {
     whosYourDaddy.webApp -> whosYourDaddy.api "Authenticate"
     whosYourDaddy.api -> facebook "OAuth"
     whosYourDaddy.api -> whosYourDaddy.webApp "Authenticated"
+    autoLayout
 }
 
 dynamic whosYourDaddy "UserWebAppData" {
@@ -41,6 +42,7 @@ dynamic whosYourDaddy "UserWebAppData" {
     whosYourDaddy.api -> whosYourDaddy.graphDB "Look for data"
     whosYourDaddy.graphDB -> whosYourDaddy.api "Data"
     whosYourDaddy.api -> whosYourDaddy.webApp "Responds with Data"
+    autoLayout
 }
 
 dynamic whosYourDaddy "ThirdPartyAppData" {
@@ -48,4 +50,5 @@ dynamic whosYourDaddy "ThirdPartyAppData" {
     whosYourDaddy.api -> whosYourDaddy.graphDB "Look for data"
     whosYourDaddy.graphDB -> whosYourDaddy.api "Data"
     whosYourDaddy.api -> thirdPartyApplications "Responds with Data"
+    autoLayout
 }
