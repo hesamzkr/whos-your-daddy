@@ -3,22 +3,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-concepts]]
 == Cross-cutting Concepts
 
+=== Client side caching
 
-
-
-
-=== _<Concept 1>_
-
-_<explanation>_
-
-
-
-=== _<Concept 2>_
-
-_<explanation>_
-
-...
-
-=== _<Concept n>_
-
-_<explanation>_
+Client side caching is a technique used to store copies of server resources on the client, so that they can be reused without having to be re-downloaded from the server. This is useful because it reduces the load on the server and speeds up the user experience.

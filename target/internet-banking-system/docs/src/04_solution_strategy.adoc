@@ -4,5 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Solution Strategy
 
 - Implement backend services in Java/Spring Boot.
+- Implement frontend dashboard & web app in React.
+- Make use of Facebook for social logins.
 - Make use of Neptune as a graph database for genealogical data, and PostgreSQL for user related data.
 - Implement a GraphQL API to serve our and third party applications.

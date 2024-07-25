@@ -4,8 +4,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 == System Scope and Context
 
 
-
-
 === Business Context
 
 image::embed:SystemContext[]
@@ -16,11 +14,3 @@ image::embed:SystemContext[]
 === Technical Context
 
 image::embed:Containers[]
-
-
-
-**<Diagram or Table>**
-
-**<optionally: Explanation of technical interfaces>**
-
-**<Mapping Input/Output to Channels>**
