@@ -1,0 +1,26 @@
+All Costs are based on a monthly basis
+
+AWS Neptune:
+
+- Serverless
+- Number of serverless instances: 5
+- Min NCU per hour: 2
+- Average hours of Idle state: 1
+- Average NCUs used per hours when active: 4
+- Cost: 2,370.20 USD
+
+AWS RDS:
+
+- PostgreSQL
+- 5 Nodes
+- db.m4.10xlarge instance
+- Cost: 28,979.20 USD
+
+Vercel hosted website:
+
+- Cost: 20 USD
+
+AWS Fargate (ECS):
+
+- 20 pods per hour
+- Cost: 249 USD
