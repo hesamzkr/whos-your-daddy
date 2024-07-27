@@ -1,0 +1,25 @@
+[[section-exit-strategy]]
+== Cloud Exit Strategy
+
+=== Data Migration
+
+* Data migration from AWS Neptune and PostgreSQL to on-premises or other cloud services.
+* Use tools like AWS Database Migration Service (DMS) for relational database.
+* Use data export/import methods for AWS Neptune.
+
+=== Containerization
+
+* Ensure all applications (Web Application, API, Dashboard) are containerized using Docker.
+* Maintain Docker images and configurations in an image repository.
+
+=== Deployment Pipeline
+
+* Use CI/CD tools such as GitHub to automate the deployment process to cloud and change the pipelines to deploy to on-premises.
+* Define Infrastructure as Code (IaC) scripts using tools like Terraform for reproducibility of cloud in case of going to new cloud or back to the cloud from on-premises.
+
+=== Downtime Plan
+
+* Perform a full backup of the database before migrations.
+* Do not disrupt production traffic during the migration process.
+* Change DNS to the new on-premise environment and after testing, shut down the cloud environment.
+* Merge the backedup database with the on-premises database.
